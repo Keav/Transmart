@@ -1,0 +1,196 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #888;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+  font-family: sans-serif, arial;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 100%;
+  }
+
+/*0.75      12px
+0.875     14px
+1         16px
+1.125     18px
+1.25      20px
+1.5       24px*/
+
+body {
+/*  font-size:16px;*/
+  font-size: 1rem;
+  line-height: 1.4;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+#owl-demo {
+  display: block;
+  position: fixed;
+}
+.owl-origin {
+  -webkit-perspective: 1200px;
+  -webkit-perspective-origin-x: 50%;
+  -webkit-perspective-origin-y: 50%;
+  -moz-perspective: 1200px;
+  -moz-perspective-origin-x: 50%;
+  -moz-perspective-origin-y: 50%;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+/* fade */
+
+.owl-fade-out {
+  -webkit-animation: fadeOut 2s both ease;
+  animation: fadeOut 2s both ease;
+}
+.owl-fade-in {
+  -webkit-animation: fadeIn 2s both ease;
+  animation: fadeIn 2s both ease;
+}
+@-webkit-keyframes empty {
+  0% {
+    opacity: 1
+  }
+}
+@keyframes empty {
+  0% {
+    opacity: 1
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.item {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  /*background-attachment:fixed;    /* this keeps the background in place */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.span {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+  position:absolute;
+  z-index:1;
+  top:20px;
+  left:50%;
+  margin: 0 0 0 -150px;
+  }
+
+.logo img {
+  width: 300px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.7);
+  line-height: 20px;
+  text-align: center;
+  color: #777;
+  padding-top: 4px;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.75rem;
+  text-rendering: inherit;
+}
+
+@media screen and (min-width: 440px) and (min-height: 321px) {
+  .span {
+    height: 180px;
+    top: 50%;
+    margin-top: -90px;
+  }
+
+  .logo {
+    top: 50%;
+    margin:-56px 0 0 -210px;
+    }
+
+  .logo img {
+    width: 420px;
+  }
+}
+
+@media screen and (min-width: 440px) and (min-height: 376px) {
+  .span {
+    height: 260px;
+    margin-top: -130px;
+  }
+}
+
+#slide1 {
+  background-image: url(../images/bg1.jpg);
+}
+#slide2 {
+  background-image: url(../images/bg2.jpg);
+}
+#slide3 {
+  background-image: url(../images/bg3.jpg);
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  /* this keeps the background in place */
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
